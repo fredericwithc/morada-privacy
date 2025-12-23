@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - Morada</title>
+    <meta name="description" content="Política de Privacidade do Morada - Gestão de Imóveis. Saiba como protegemos seus dados.">
+    <meta name="robots" content="index, follow">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #205295 0%, #2C74B3 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 40px;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #144272, #205295, #2C74B3);
+        }
+
+        .logo {
+            font-size: 4em;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            font-weight: 300;
+            opacity: 0.95;
+        }
+
+        .last-updated {
+            margin-top: 20px;
+            font-style: italic;
+            opacity: 0.9;
+            font-size: 0.95em;
+        }
+
+        .content {
+            padding: 50px 60px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 30px 25px;
+            }
+        }
+
+        h2 {
+            color: #205295;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            font-size: 2em;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #e9ecef;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background: #205295;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #2C74B3;
+            margin-top: 30px;
+            margin-bottom: 18px;
+            font-size: 1.4em;
+        }
+
+        p {
+            margin-bottom: 18px;
+            text-align: justify;
+            font-size: 1.05em;
+        }
+
+        ul, ol {
+            margin-left: 35px;
+            margin-bottom: 25px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            font-size: 1.05em;
+        }
+
+        strong {
+            color: #205295;
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-left: 5px solid #205295;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(32, 82, 149, 0.1);
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            border-left: 5px solid #ff9800;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(255, 152, 0, 0.1);
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+            padding: 35px;
+            border-radius: 12px;
+            margin: 50px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .contact-box h2 {
+            margin-top: 0;
+            border-bottom: none;
+        }
+
+        .contact-box h2::after {
+            display: none;
+        }
+
+        .contact-info {
+            display: grid;
+            gap: 18px;
+            margin-top: 25px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 1.05em;
+        }
+
+        .contact-item strong {
+            min-width: 100px;
+            color: #144272;
+        }
+
+        .contact-item a {
+            color: #205295;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .contact-item a:hover {
+            border-bottom-color: #205295;
+        }
+
+        footer {
+            background: #f8f9fa;
+            margin-top: 60px;
+            padding: 40px;
+            text-align: center;
+            border-top: 3px solid #e9ecef;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        footer p {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 12px;
+        }
+
+        .footer-logo {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 35px;
+            background: linear-gradient(135deg, #205295 0%, #2C74B3 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(32, 82, 149, 0.3);
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(32, 82, 149, 0.4);
+        }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #205295, transparent);
+            margin: 50px 0;
+        }
+
+        .print-hide {
+            display: block;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+            header {
+                background: #205295;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .print-hide {
+                display: none;
+            }
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Link styles */
+        a {
+            color: #205295;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #144272;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🏠</div>
+            <h1>POLÍTICA DE PRIVACIDADE</h1>
+            <p class="subtitle">MORADA - Gestão de Imóveis</p>
+            <p class="last-updated">Última atualização: 09 de dezembro de 2025</p>
+        </header>
+
+        <div class="content">
+            <section id="introducao">
+                <h2>Bem-vindo à Política de Privacidade do Morada</h2>
+                <p>Sua privacidade e segurança online são importantes para nós. Esta Política de Privacidade descreve como o Morada coleta, protege, divulga e utiliza as informações pessoais fornecidas ou coletadas através do nosso serviço. Esta política se aplica a todos os aplicativos móveis e serviços online do Morada.</p>
+                <p><strong>Se você não concordar com qualquer prática descrita nesta Política de Privacidade, por favor, não utilize nossos serviços.</strong></p>
+            </section>
+
+            <section id="visao-geral">
+                <h2>Visão Geral Rápida</h2>
+                <p>O Morada é uma ferramenta de gestão de imóveis e finanças pessoal. Você escolhe quais imóveis cadastrar e quais informações financeiras deseja registrar. Quando você adiciona um imóvel e suas despesas ou receitas, esses dados ficam visíveis apenas para você e para os colaboradores que você escolher convidar.</p>
+                
+                <div class="highlight-box">
+                    <p><strong>Privacidade por padrão:</strong> Qualquer pessoa com quem você compartilhar um imóvel como colaborador poderá visualizar e, dependendo das permissões que você conceder, editar as informações financeiras daquele imóvel. Os documentos que você adiciona ao Morada nunca são compartilhados com colaboradores - apenas você, como proprietário, pode vê-los. As informações que você adiciona no Morada não são tornadas públicas.</p>
+                </div>
+
+                <p>Para usar o Morada, você precisará criar uma conta, o que requer fornecer algumas informações básicas como nome completo, endereço de e-mail e senha. Usamos essas informações para gerenciar sua conta, incluindo entrar em contato quando necessário. O e-mail também pode ser usado para que outros usuários possam adicioná-lo como colaborador em seus imóveis, e para que você possa acessar sua conta de qualquer lugar.</p>
+
+                <p>Para enviar notificações importantes (como alertas de vencimento ou convites de colaboração), coletamos informações básicas sobre a plataforma do seu dispositivo (iOS ou Android). Isso nos ajuda a garantir que as notificações cheguem corretamente no seu dispositivo.</p>
+
+                <div class="highlight-box">
+                    <p><strong>Não compartilhamos suas informações pessoais com empresas de marketing ou propaganda.</strong> Nunca venderemos seus dados ou os compartilharemos para fins diferentes do que está descrito nesta política sem o seu consentimento. Você tem controle total sobre suas configurações de privacidade através da página de Configurações da Conta no aplicativo. Se precisar de ajuda, estamos sempre disponíveis em <a href="mailto:morada.contact@gmail.com">morada.contact@gmail.com</a>.</p>
+                </div>
+
+                <h3>Armazenamento de Dados</h3>
+                <p><strong>Sobre onde seus dados são armazenados:</strong> o Morada utiliza o Supabase, um serviço confiável de infraestrutura de nuvem. Seus dados são armazenados em servidores seguros localizados no Brasil (região de São Paulo), o que garante conformidade total com a Lei Geral de Proteção de Dados (LGPD) brasileira. Aplicamos medidas rigorosas de segurança e criptografia para manter seus dados protegidos. Você não precisa fazer nada - essas proteções são automáticas e funcionam 24 horas por dia para manter suas informações seguras.</p>
+
+                <div class="warning-box">
+                    <p><strong>Proteção de menores:</strong> O Morada não se destina ao uso por crianças menores de 18 anos. Não coletamos intencionalmente informações pessoalmente identificáveis de menores de 18 anos. Se você é pai ou responsável e descobrir que seu filho forneceu informações pessoais sem seu consentimento, entre em contato conosco em <a href="mailto:morada.contact@gmail.com">morada.contact@gmail.com</a> e excluiremos prontamente essas informações.</p>
+                </div>
+            </section>
+
+            <section id="dados-coletados">
+                <h2>Dados que Coletamos e Como os Usamos</h2>
+                <p>Quando você usa o Morada, podemos coletar as seguintes informações sobre você:</p>
+
+                <h3>Informações que você nos fornece</h3>
+
+                <h4><strong>Informações de registro:</strong></h4>
+                <p>Ao criar uma conta no Morada, solicitamos seu nome completo, endereço de e-mail e senha. O e-mail é obrigatório para que possamos entrar em contato sobre sua conta e para que você possa acessar seus dados de qualquer dispositivo. Outros usuários podem adicioná-lo como colaborador em seus imóveis usando seu endereço de e-mail. Você pode alterar essas informações a qualquer momento na página de Configurações da Conta ou enviando um e-mail para <a href="mailto:morada.contact@gmail.com">morada.contact@gmail.com</a>.</p>
+
+                <h4><strong>Informações de perfil:</strong></h4>
+                <p>Você pode adicionar informações opcionais ao seu perfil, como foto de perfil, número de telefone, data de nascimento e preferências de idioma e tema. Essas informações ajudam a personalizar sua experiência no aplicativo. O número de telefone, quando fornecido, adiciona uma camada extra de segurança à sua conta e pode ser usado por outros usuários para adicioná-lo como colaborador.</p>
+
+                <h4><strong>Conteúdo gerado pelo usuário:</strong></h4>
+                <p>Ao usar o serviço, você adiciona informações sobre seus imóveis, como nomes, endereços, fotos e registros financeiros (despesas e receitas). Essas informações são suas e ficam visíveis apenas para você - a menos que você decida convidar colaboradores para ajudar a gerenciar um imóvel específico. Quando você convida um colaborador para um imóvel, ele poderá ver e editar as informações financeiras (despesas e receitas) daquele imóvel. Os documentos que você adicionar ao imóvel permanecem privados - colaboradores não têm acesso a eles. Você escolhe quem convidar, e pode remover colaboradores a qualquer momento.</p>
+
+                <h4><strong>Documentos:</strong></h4>
+                <p>Você pode fazer upload de documentos relacionados aos seus imóveis (como contratos, recibos, certidões). Esses documentos são armazenados de forma segura e apenas você pode vê-los - colaboradores não têm acesso aos seus documentos. Aceitamos arquivos PDF, DOC, DOCX, XLS, XLSX, JPG e PNG com até 10 MB cada.</p>
+
+                <h4><strong>A forma como você usa nosso serviço:</strong></h4>
+                <p>O Morada armazena os dados que você cria, como despesas, receitas, imóveis e documentos, para fornecer o serviço. Não coletamos informações sobre frequência de uso, duração de sessões ou padrões de interação para análise ou marketing. Os dados são armazenados apenas para permitir o funcionamento do aplicativo e sua sincronização entre dispositivos.</p>
+
+                <h4><strong>Informações compartilhadas por outros:</strong></h4>
+                <p>Outros usuários podem convidá-lo para colaborar em imóveis usando seu endereço de e-mail. Quando isso acontece, armazenamos informações do convite (como nome do convidante, imóvel e permissões) em sua conta para que você possa visualizar e gerenciar os convites recebidos.</p>
+
+                <h4><strong>Informações de dispositivo:</strong></h4>
+                <p>Para enviar notificações push em dispositivos móveis, coletamos informações sobre a plataforma do seu dispositivo (iOS ou Android). Essas informações são armazenadas apenas para fins de notificações e não incluem detalhes sobre seu navegador, sistema operacional específico ou versão do aplicativo. Não coletamos informações de localização geográfica.</p>
+
+                <h4><strong>Informações de cobrança:</strong></h4>
+                <p>O Morada oferece assinaturas premium ("Morada Pro") através das lojas de aplicativos (App Store e Google Play). Quando você se inscreve em uma assinatura:</p>
+                <ul>
+                    <li><strong>Processamento de pagamento:</strong> O pagamento é processado pela Apple (App Store) ou Google (Google Play), não diretamente pelo Morada. Essas plataformas coletam e processam suas informações de pagamento (como número de cartão de crédito ou débito) de acordo com suas próprias políticas de privacidade.</li>
+                    <li><strong>Informações que recebemos:</strong> Recebemos apenas informações relacionadas à sua assinatura, como status da assinatura (ativa, cancelada, expirada), data de início e expiração, e identificadores de transação fornecidos pelas lojas. Não coletamos, armazenamos ou processamos informações de cartão de crédito ou débito diretamente.</li>
+                    <li><strong>Finalidade:</strong> Utilizamos essas informações para gerenciar sua assinatura, fornecer acesso aos recursos premium e para fins de conformidade regulatória.</li>
+                </ul>
+
+                <h4><strong>Informações de outras fontes:</strong></h4>
+                <p>Não utilizamos informações de fontes externas (como operadoras de telefone ou bases de dados públicas) para verificação de identidade, detecção de fraude ou outros fins. O sistema de suporte utiliza apenas as informações que você fornece diretamente através do formulário de contato (email, assunto e mensagem).</p>
+            </section>
+
+            <section id="uso-dados">
+                <h2>Mais Informações Sobre Como Usamos os Dados</h2>
+                <p>O Morada foi criado para ajudar você a gerenciar seus imóveis e finanças pessoais. Usamos suas informações para fornecer e melhorar o serviço. Veja como:</p>
+
+                <h3>Funcionalidades principais:</h3>
+                <ul>
+                    <li>Armazenar e gerenciar informações sobre seus imóveis, despesas, receitas e pagamentos.</li>
+                    <li>Permitir que você e seus colaboradores acessem e editem informações compartilhadas.</li>
+                    <li>Exibir seu nome e email para colaboradores, para que saibam com quem estão compartilhando informações.</li>
+                </ul>
+
+                <h3>Suporte e comunicação:</h3>
+                <ul>
+                    <li>Responder suas perguntas quando você entrar em contato através do formulário de suporte.</li>
+                    <li>Enviar emails de confirmação quando você criar sua conta ou alterar seu email (essas mensagens são necessárias para a segurança da sua conta).</li>
+                    <li>Enviar notificações dentro do app sobre convites para colaborar em imóveis e contas próximas do vencimento.</li>
+                </ul>
+
+                <h3>Melhorias e personalização:</h3>
+                <ul>
+                    <li>Armazenar suas preferências (como idioma e tema) para personalizar sua experiência.</li>
+                    <li>Usar informações de uso para identificar e corrigir problemas técnicos e melhorar a funcionalidade do aplicativo.</li>
+                </ul>
+
+                <h3>Segurança:</h3>
+                <ul>
+                    <li>Proteger sua conta usando autenticação segura e criptografia de dados.</li>
+                    <li>Garantir que apenas você e seus colaboradores autorizados tenham acesso às informações compartilhadas.</li>
+                </ul>
+
+                <p><strong>Comunicação por email:</strong> Enviamos emails essenciais relacionados à sua conta (confirmação de email, redefinição de senha) e respostas ao seu contato de suporte. Se enviarmos emails promocionais ou informativos no futuro, você poderá optar por não recebê-los através das configurações da sua conta ou seguindo as instruções de cancelamento de assinatura em cada email.</p>
+            </section>
+
+            <section id="compartilhamento">
+                <h2>Como Compartilhamos Seus Dados</h2>
+                
+                <div class="highlight-box">
+                    <p><strong>Não vendemos seus dados pessoais.</strong> No entanto, compartilhamos suas informações nas seguintes circunstâncias:</p>
+                </div>
+
+                <h3>Com colaboradores que você convida:</h3>
+                <p>Quando você convida alguém para colaborar em um imóvel, as informações financeiras daquele imóvel (despesas, receitas, descrições, valores, datas) são compartilhadas com esse colaborador conforme as permissões que você conceder. Documentos nunca são compartilhados com colaboradores - apenas você pode vê-los.</p>
+
+                <h3>Com provedores de serviço:</h3>
+                <p>Usamos o Supabase como nosso provedor de infraestrutura de backend. Todos os seus dados são armazenados de forma segura nos servidores do Supabase localizados no Brasil, que atua como nosso operador de dados. O Supabase processa dados pessoais em nosso nome e está sujeito a obrigações de proteção de dados estabelecidas em contrato. Para mais informações, consulte a <a href="https://supabase.com/privacy" target="_blank">Política de Privacidade do Supabase</a>.</p>
+
+                <h3>Com lojas de aplicativos:</h3>
+                <p>Informações básicas de conta e transações de pagamento são compartilhadas com a App Store da Apple e Google Play Store conforme necessário para processamento de pagamentos e distribuição do aplicativo. Essas plataformas têm suas próprias políticas de privacidade.</p>
+
+                <h3>Para cumprir a lei:</h3>
+                <p>Podemos divulgar suas informações quando exigido por lei ou em resposta a processos legais válidos, incluindo ordens judiciais ou requisições de autoridades governamentais. Também podemos divulgar dados quando acreditarmos de boa-fé que a divulgação é necessária para proteger nossos direitos, sua segurança ou a segurança de terceiros, investigar fraude ou responder a uma solicitação governamental.</p>
+
+                <h3>Transferência de negócios:</h3>
+                <p>Em caso de fusão, aquisição, venda de ativos ou outra transação comercial, suas informações pessoais podem ser transferidas como parte dos ativos. Você será notificado sobre qualquer mudança na propriedade ou uso de seus dados pessoais.</p>
+            </section>
+
+            <section id="seguranca">
+                <h2>Como Protegemos Seus Dados</h2>
+                <p>Levamos a segurança dos seus dados a sério. Implementamos medidas técnicas e organizacionais para proteger suas informações pessoais contra acesso não autorizado, perda, destruição ou alteração, incluindo:</p>
+
+                <h3>Criptografia e autenticação:</h3>
+                <ul>
+                    <li>Criptografia de dados em trânsito usando HTTPS/TLS em todas as comunicações com nossos servidores</li>
+                    <li>Senhas criptografadas — suas senhas são armazenadas de forma segura usando criptografia de hash (bcrypt) e nunca são armazenadas em texto plano</li>
+                    <li>Autenticação segura via tokens JWT (JSON Web Tokens) que expiram automaticamente</li>
+                </ul>
+
+                <h3>Controle de acesso:</h3>
+                <ul>
+                    <li>Row Level Security (RLS) no banco de dados para garantir que você só possa acessar seus próprios dados e os dados compartilhados com você</li>
+                    <li>Verificação de propriedade — o sistema verifica que você é o proprietário ou colaborador autorizado antes de permitir acesso a informações de imóveis e documentos</li>
+                </ul>
+
+                <h3>Segurança de documentos:</h3>
+                <ul>
+                    <li>URLs assinadas temporárias para acesso a documentos — cada URL expira em 1 hora para limitar o acesso não autorizado</li>
+                    <li>Armazenamento seguro — documentos são armazenados em buckets seguros do Supabase com políticas de acesso restritivas</li>
+                </ul>
+
+                <h3>Infraestrutura:</h3>
+                <ul>
+                    <li>Backups automáticos — o Supabase realiza backups automáticos dos dados conforme as políticas do plano de serviço</li>
+                    <li>Monitoramento de segurança — o Supabase monitora a infraestrutura e mantém logs de segurança</li>
+                </ul>
+
+                <div class="warning-box">
+                    <p><strong>Importante:</strong> Embora façamos o nosso melhor para proteger seus dados, nenhum método de transmissão ou armazenamento eletrônico é 100% seguro. Não podemos garantir segurança absoluta contra todas as ameaças possíveis. Você é responsável por manter a confidencialidade de suas credenciais de acesso (email e senha) e por nos notificar imediatamente sobre qualquer uso não autorizado de sua conta através do formulário de suporte.</p>
+                    <p><strong>Recomendação:</strong> Mantenha cópias próprias de informações importantes, pois os backups são gerenciados pelo Supabase conforme suas políticas de serviço.</p>
+                </div>
+            </section>
+
+            <section id="retencao">
+                <h2>Por Quanto Tempo Mantemos Seus Dados</h2>
+                <p>Mantemos suas informações pessoais enquanto sua conta estiver ativa e você continuar usando o Morada.</p>
+                <p>Se você decidir excluir sua conta, seus dados serão permanentemente excluídos de nossos sistemas ativos. Atualmente, não há período de recuperação após a exclusão - a exclusão é imediata e irreversível. Por isso, recomendamos fortemente que você faça backup de todos os dados importantes antes de solicitar o cancelamento da sua conta.</p>
+                <p>Algumas informações podem ser mantidas por períodos mais longos quando exigido por lei para cumprimento de obrigações legais, fiscais ou contábeis, resolução de disputas ou aplicação de nossos termos.</p>
+                <p>Dados anonimizados que não podem ser associados a você pessoalmente podem ser mantidos indefinidamente para fins estatísticos e de melhoria do serviço.</p>
+            </section>
+
+            <section id="direitos">
+                <h2>Seus Direitos e Controles</h2>
+                <p>De acordo com a Lei Geral de Proteção de Dados (LGPD), você tem controle sobre seus dados pessoais. Você pode:</p>
+
+                <ul>
+                    <li><strong>Acessar seus dados:</strong> Ver quais informações pessoais temos sobre você através das Configurações de Perfil no aplicativo.</li>
+                    <li><strong>Corrigir seus dados:</strong> Atualizar informações incompletas, inexatas ou desatualizadas através das Configurações de Perfil no aplicativo. Você pode modificar seu nome, email, telefone, data de nascimento e foto de perfil a qualquer momento.</li>
+                    <li><strong>Excluir seus dados:</strong> Solicitar a exclusão de sua conta e dados entrando em contato conosco pelo e-mail <a href="mailto:morada.contact@gmail.com">morada.contact@gmail.com</a>. Atualmente, não há funcionalidade de exclusão automática de conta no aplicativo, mas processaremos sua solicitação manualmente.</li>
+                    <li><strong>Portabilidade de dados:</strong> Solicitar uma cópia de seus dados em formato legível por máquina entrando em contato conosco pelo e-mail <a href="mailto:morada.contact@gmail.com">morada.contact@gmail.com</a>. Atualmente, há funcionalidade limitada de exportação de documentos, mas podemos fornecer todos os seus dados mediante solicitação.</li>
+                    <li><strong>Revogar consentimento:</strong> Quando o tratamento é baseado em consentimento, você pode revogá-lo a qualquer momento entrando em contato conosco.</li>
+                    <li><strong>Opor-se ao processamento:</strong> Você pode se opor ao tratamento de dados realizado com base em legítimo interesse entrando em contato conosco.</li>
+                </ul>
+
+                <h3>Como exercer seus direitos:</h3>
+                <ul>
+                    <li>Acesse e modifique a maioria de suas informações através das Configurações de Perfil no aplicativo (nome, email, telefone, data de nascimento, foto de perfil).</li>
+                    <li>Solicite a exclusão de sua conta ou portabilidade de dados entrando em contato conosco pelo e-mail <a href="mailto:morada.contact@gmail.com">morada.contact@gmail.com</a>.</li>
+                </ul>
+
+                <p>Responderemos às suas solicitações em prazo razoável e de acordo com os prazos estabelecidos pela LGPD (geralmente até 15 dias úteis). Podemos solicitar informações adicionais para verificar sua identidade antes de processar solicitações que envolvam acesso ou alteração de dados pessoais.</p>
+            </section>
+
+            <section id="menores">
+                <h2>Crianças e Menores de Idade</h2>
+                <p>O Morada não é destinado a menores de 18 anos. Atualmente, não há verificação automática de idade durante o cadastro. Se você é pai ou responsável e descobrir que seu filho forneceu informações pessoais sem seu consentimento, entre em contato conosco imediatamente em <a href="mailto:morada.contact@gmail.com">morada.contact@gmail.com</a> e excluiremos essas informações prontamente.</p>
+            </section>
+
+            <section id="cookies">
+                <h2>Cookies e Tecnologias Similares</h2>
+                <p>O Morada utiliza tecnologias de armazenamento local para manter sua sessão ativa, armazenar cache de dados e melhorar sua experiência no aplicativo.</p>
+
+                <h3>Tecnologias utilizadas:</h3>
+                <ul>
+                    <li><strong>IndexedDB (preferencial) e localStorage (fallback):</strong> usados para cache local de dados mensais (despesas e receitas), melhorando a performance e permitindo acesso offline parcial.</li>
+                    <li><strong>Armazenamento de sessão:</strong> o Supabase armazena sua sessão de autenticação localmente para manter você conectado entre sessões do aplicativo.</li>
+                    <li><strong>Tokens temporários:</strong> em desenvolvimento, tokens de confirmação de email são armazenados temporariamente no dispositivo.</li>
+                </ul>
+
+                <h3>O que é armazenado:</h3>
+                <ul>
+                    <li>Sessão de autenticação (mantém você conectado)</li>
+                    <li>Cache de dados financeiros (para melhor performance)</li>
+                    <li>Preferências de idioma e tema (armazenadas no servidor, não localmente)</li>
+                </ul>
+
+                <p>Essas tecnologias são essenciais para o funcionamento do aplicativo — garantem que você permaneça conectado, que o aplicativo carregue mais rapidamente e que você tenha uma experiência personalizada.</p>
+
+                <p>Atualmente, não utilizamos cookies de rastreamento de terceiros para fins publicitários. Se implementarmos ferramentas de análise como Google Analytics no futuro, atualizaremos esta política e você poderá optar por não participar através das configurações do seu navegador ou dispositivo.</p>
+
+                <h3>Como remover dados armazenados localmente:</h3>
+                <ul>
+                    <li><strong>Fazer logout:</strong> ao fazer logout, sua sessão é removida automaticamente. O cache de dados pode permanecer no dispositivo para melhorar a performance em futuras sessões.</li>
+                    <li><strong>Desinstalar o aplicativo:</strong> desinstalar o aplicativo remove todos os dados armazenados localmente, incluindo cache e sessão.</li>
+                </ul>
+            </section>
+
+            <section id="alteracoes">
+                <h2>Alterações Nesta Política</h2>
+                <p>Podemos atualizar esta Política de Privacidade periodicamente para refletir mudanças em nossas práticas, legislação ou funcionalidades do aplicativo. A versão atualizada será identificada pela data de "Última atualização" no topo do documento.</p>
+                <p>Se fizermos alterações substanciais que afetem seus direitos, notificaremos você por e-mail ou através de um aviso no aplicativo. O uso continuado do Morada após a publicação de alterações constitui sua aceitação da Política atualizada.</p>
+            </section>
+
+            <section id="anpd">
+                <h2>Autoridade Nacional de Proteção de Dados</h2>
+                <p>Se você tiver questões ou preocupações sobre como tratamos seus dados que não possam ser resolvidas diretamente conosco, você tem o direito de apresentar uma reclamação à Autoridade Nacional de Proteção de Dados (ANPD). Para mais informações sobre a ANPD, visite: <a href="https://www.gov.br/anpd" target="_blank">https://www.gov.br/anpd</a></p>
+            </section>
+
+            <div class="contact-box">
+                <h2 id="contato">Entre em Contato Conosco</h2>
+                <p>Valorizamos sua privacidade e estamos aqui para ajudar com qualquer dúvida ou preocupação. Se você tiver perguntas sobre esta Política de Privacidade, quiser exercer seus direitos ou tiver alguma preocupação sobre como tratamos seus dados, entre em contato conosco:</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>E-mail:</strong> 
+                        <a href="mailto:morada.contact@gmail.com">morada.contact@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Controlador de Dados:</strong> 
+                        Frederic Leyenberger
+                    </div>
+                    <div class="contact-item">
+                        <strong>Localização:</strong> 
+                        Rio de Janeiro, RJ, Brasil
+                    </div>
+                </div>
+
+                <p style="margin-top: 20px;">Faremos o nosso melhor para responder prontamente e resolver quaisquer preocupações que você possa ter.</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="highlight-box">
+                <p style="text-align: center; font-size: 1.1em;"><strong>Obrigado por confiar no Morada para gerenciar suas informações de imóveis e finanças.</strong></p>
+                <p style="text-align: center;">Seus dados são armazenados de forma segura no Brasil e estamos comprometidos em proteger sua privacidade.</p>
+            </div>
+
+            <center class="print-hide">
+                <a href="#" onclick="window.history.back(); return false;" class="back-link">← Voltar</a>
+            </center>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">🏠</div>
+                <p><strong>Morada - Gestão de Imóveis</strong></p>
+                <p>Esta Política de Privacidade foi elaborada em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).</p>
+                <p style="margin-top: 20px;">Documento gerado em 09 de dezembro de 2025</p>
+                <p>© 2025 Morada - Todos os direitos reservados</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
